@@ -1,7 +1,6 @@
 <?php
 
 use Basis\Nats\Configuration;
-use Seddighi78\NatsLaravel\Events\MessageReceived;
 
 return [
     'connections' => [
