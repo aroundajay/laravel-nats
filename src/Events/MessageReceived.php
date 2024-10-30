@@ -1,6 +1,6 @@
 <?php
 
-namespace Seddighi78\NatsLaravel\Events;
+namespace Seddighi78\LaravelNats\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 

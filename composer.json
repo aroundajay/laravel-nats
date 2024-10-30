@@ -29,7 +29,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Seddighi78\\LaravelNats\\Providers\\NatsServiceProvider"
+        "Seddighi78\\LaravelNats\\NatsServiceProvider"
       ]
     }
   }

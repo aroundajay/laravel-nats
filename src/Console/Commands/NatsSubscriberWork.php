@@ -1,10 +1,10 @@
 <?php
 
-namespace Seddighi78\NatsLaravel\Console\Commands;
+namespace Seddighi78\LaravelNats\Console\Commands;
 
 use Illuminate\Console\Command;
-use Seddighi78\NatsLaravel\Events\MessageReceived;
-use Seddighi78\NatsLaravel\Factories\NatsClientFactoryInterface;
+use Seddighi78\LaravelNats\Events\MessageReceived;
+use Seddighi78\LaravelNats\Factories\NatsClientFactoryInterface;
 
 class NatsSubscriberWork extends Command
 {

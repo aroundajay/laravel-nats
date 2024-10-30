@@ -1,6 +1,6 @@
 <?php
 
-namespace Seddighi78\NatsLaravel\Factories;
+namespace Seddighi78\LaravelNats\Factories;
 
 use Basis\Nats\Client;
 use Basis\Nats\Configuration;
