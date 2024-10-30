@@ -6,7 +6,7 @@ use Basis\Nats\Client;
 use Basis\Nats\Configuration;
 use Exception;
 
-class NatsClientFactory implements ClientFactoryInterface
+class NatsClientFactory implements NatsClientFactoryInterface
 {
     public function getClient($connection = 'default'): Client
     {
