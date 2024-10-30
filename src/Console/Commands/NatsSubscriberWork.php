@@ -19,6 +19,8 @@ class NatsSubscriberWork extends Command
         $client = app(NatsClientFactoryInterface::class)->getClient($connection);
         $client->subscribe($subject, fn ($message) => MessageReceived::dispatch($subject, $message));
 
+        $this->output->info("start processing message from [$subject] subject and connection [$connection] ...");
+
         while(true) {
             $client->process();
         }
