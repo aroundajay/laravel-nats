@@ -72,3 +72,11 @@ $client = app(\Seddighi78\LaravelNats\Factories\NatsClientFactoryInterface::clas
 $client->publish('main', 'test');
 ```
 When a message is published and the command `nats:subscriber:work` is running, the `MessageReceived` event will be dispatched, and you can listen to this event to do your job.
+
+Also you can use the facade for calling the this methods
+```php
+use Seddighi78\LaravelNats\Facades\Nats;
+
+// calling publish method 
+Nats::getClient()->publish('main', 'test');
+```
