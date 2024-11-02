@@ -30,7 +30,11 @@
     "laravel": {
       "providers": [
         "Seddighi78\\LaravelNats\\NatsServiceProvider"
-      ]
+      ],
+      "aliases": {
+        "Nats": "Seddighi78\\LaravelNats\\Facades"
+      }
     }
   }
 }
+
