@@ -17,7 +17,7 @@ class NatsSubscriberWork extends Command
         $connection = $this->option('connection');
 
         $client = app(NatsClientFactoryInterface::class)->getClient($connection);
-        $client->subscribe($subject, function ($message) {
+        $client->subscribe($subject, function ($message) use($subject) {
             $this->info("received message from subject [$subject] message: $message");
             MessageReceived::dispatch($subject, $message);
         });
